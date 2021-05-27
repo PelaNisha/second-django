@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+</head>
+<body>
+    
+    <h1>Welcome this is my page</h1>
+    <form method="POST">
+        {%csrf_token%}
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname">
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+    <style>
+        body{
+            background-color: rgb(117, 176, 194);
+        }
+    </style>
+</body>
+</html>
